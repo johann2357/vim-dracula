@@ -40,7 +40,7 @@ endfunc
 
 let g:airline#themes#dracula#palette = {
 \   'normal': s:color_map(
-\       ['bg', 'purple'],
+\       ['bg', 'green'],
 \       ['fg', 'comment'],
 \       ['fg', 'selection'],
 \       {
@@ -49,7 +49,7 @@ let g:airline#themes#dracula#palette = {
 \       },
 \     ),
 \   'normal_modified': s:color_map(
-\       ['bg', 'purple'],
+\       ['bg', 'green'],
 \       ['fg', 'comment'],
 \       ['fg', 'bgdark'],
 \       {
@@ -58,7 +58,7 @@ let g:airline#themes#dracula#palette = {
 \       },
 \     ),
 \   'insert': s:color_map(
-\       ['bg', 'green'],
+\       ['bg', 'yellow'],
 \       ['fg', 'comment'],
 \       ['fg', 'selection'],
 \       {
@@ -67,7 +67,7 @@ let g:airline#themes#dracula#palette = {
 \       },
 \     ),
 \   'insert_modified': s:color_map(
-\       ['bg', 'green'],
+\       ['bg', 'yellow'],
 \       ['fg', 'comment'],
 \       ['fg', 'bgdark'],
 \       {
@@ -76,7 +76,7 @@ let g:airline#themes#dracula#palette = {
 \       },
 \     ),
 \   'replace': s:color_map(
-\       ['bg', 'orange'],
+\       ['bg', 'purple'],
 \       ['fg', 'comment'],
 \       ['fg', 'selection'],
 \       {
@@ -85,7 +85,7 @@ let g:airline#themes#dracula#palette = {
 \       },
 \     ),
 \   'replace_modified': s:color_map(
-\       ['bg', 'orange'],
+\       ['bg', 'purple'],
 \       ['fg', 'comment'],
 \       ['fg', 'bgdark'],
 \       {
@@ -94,7 +94,7 @@ let g:airline#themes#dracula#palette = {
 \       },
 \     ),
 \   'visual': s:color_map(
-\       ['bg', 'yellow'],
+\       ['bg', 'orange'],
 \       ['fg', 'comment'],
 \       ['fg', 'selection'],
 \       {
@@ -103,7 +103,7 @@ let g:airline#themes#dracula#palette = {
 \       },
 \     ),
 \   'visual_modified': s:color_map(
-\       ['bg', 'yellow'],
+\       ['bg', 'orange'],
 \       ['fg', 'comment'],
 \       ['fg', 'bgdark'],
 \       {
@@ -137,8 +137,8 @@ if get(g:, 'airline#extensions#tabline#enabled', 0)
         \ 'airline_tabfill': s:clr('bg', 'bglight'),
         \
         \ 'airline_tab': s:clr('comment', 'bg'),
-        \ 'airline_tabsel': s:clr('bg', 'purple'),
-        \ 'airline_tabmod': s:clr('green', 'bg'),
+        \ 'airline_tabsel': s:clr('bg', 'green'),
+        \ 'airline_tabmod': s:clr('yellow', 'bg'),
         \
         \ 'airline_tab_right': s:clr('comment', 'bg'),
         \ 'airline_tabsel_right': s:clr('fg', 'bg', ),
@@ -151,7 +151,7 @@ if exists('g:loaded_ctrlp')
   let g:airline#themes#dracula#palette.ctrlp = airline#extensions#ctrlp#generate_color_map(
         \ s:clr('fg', 'selection'),
         \ s:clr('fg', 'comment'),
-        \ s:clr('fg', 'purple'),
+        \ s:clr('fg', 'green'),
         \)
 endif
 "}}}2

@@ -39,6 +39,9 @@ let s:bg        = g:dracula#palette.bg
 let s:bgdark    = g:dracula#palette.bgdark
 let s:bgdarker  = g:dracula#palette.bgdarker
 
+let s:fglinenr    = g:dracula#palette.fglinenr
+let s:bglinenr    = g:dracula#palette.bglinenr
+
 let s:comment   = g:dracula#palette.comment
 let s:selection = g:dracula#palette.selection
 let s:subtle    = g:dracula#palette.subtle
@@ -221,7 +224,7 @@ hi! link ErrorMsg     DraculaRedInverse
 hi! link FoldColumn   DraculaSubtle
 hi! link Folded       DraculaBoundary
 hi! link IncSearch    DraculaOrangeInverse
-call s:h('LineNr', s:comment)
+call s:h('LineNr', s:bglinenr, s:fglinenr)
 hi! link MoreMsg      DraculaFgBold
 hi! link NonText      DraculaSubtle
 hi! link Pmenu        DraculaBgDark
